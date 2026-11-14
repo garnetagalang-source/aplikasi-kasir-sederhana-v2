@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir GAKEEVHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>GAKEEVHA STORE</h2>
+        <p class="subtitle">Sistem Kasir Sederhana</p>
+        
+        <div class="form-group">
+            <label for="nama">Nama Pembeli:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama pembeli" autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+            <label for="barang">Nama Barang:</label>
+            <input type="text" id="barang" placeholder="Masukkan nama barang" autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+            <label for="harga">Harga Barang (Rp):</label>
+            <input type="number" id="harga" placeholder="Contoh: 150000">
+        </div>
+        
+        <div class="form-group">
+            <label for="jumlah">Jumlah Barang:</label>
+            <input type="number" id="jumlah" placeholder="Contoh: 2">
+        </div>
+        
+        <div class="btn-group">
+            <button onclick="hitungTotal()" id="btn-hitung">Hitung Total</button>
+            <button onclick="resetForm()" id="btn-reset" class="btn-secondary">Reset</button>
+        </div>
+
+        <!-- Area Hasil Output / Nota -->
+        <div id="hasil-output" class="output-card hidden">
+            <div class="nota-header">
+                <h3>GAKEEVHA STORE</h3>
+                <p>Nota Pembayaran</p>
+            </div>
+            <div class="nota-body">
+                <p><strong>Nama Pembeli:</strong> <span id="out-nama">-</span></p>
+                <p><strong>Barang:</strong> <span id="out-barang">-</span></p>
+                <p><strong>Subtotal:</strong> <span id="out-subtotal">-</span></p>
+                <p><strong>Diskon:</strong> <span id="out-diskon">-</span></p>
+            </div>
+            <div class="nota-footer">
+                <p class="total-text"><strong>Total Bayar:</strong> <span id="out-total">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

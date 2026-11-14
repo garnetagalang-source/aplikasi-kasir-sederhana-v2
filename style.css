@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f5f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 420px;
+}
+
+h2 {
+    text-align: center;
+    color: #1a1a1a;
+    margin: 0 0 5px 0;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat input diklik/fokus */
+input:focus {
+    border-color: #8b0707;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+    outline: none;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: #8b0707;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8b0707;
+}
+
+/* Efek tombol ditekan */
+button:active {
+    transform: scale(0.96);
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #d4d4d4;
+}
+
+.output-card {
+    margin-top: 25px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    position: relative;
+}
+
+/* Utility Class untuk Animasi Nota */
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Desain Nota (Struk) */
+.nota-header {
+    text-align: center;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.nota-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.nota-header p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.nota-body p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nota-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px dashed #ddd;
+}
+
+.nota-footer p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-text {
+    font-size: 16px;
+    color: #2b9348 !important;
+}
